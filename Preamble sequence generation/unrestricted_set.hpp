@@ -24,8 +24,13 @@ public:
     unrestricted_set();
     unrestricted_set(unrestricted_set& orig);
     virtual ~unrestricted_set();
-    virtual int32_t root_sequence_count(int32_t zcz_config) override;
+    virtual int root_sequence_count(int zcz_config) override;
 private:
+    int Nzc0_3=839;
+    int Nzc4=139;
+    //Table 5.7.2-2 for getting Ncs value
+   int Zone_Config_Table0_3[16] = {0,13,15,18,22,26,32,38,46,59,76,93,119,167,279,419};
+    
 
 };
 
